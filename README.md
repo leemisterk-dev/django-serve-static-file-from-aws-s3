@@ -43,3 +43,7 @@ MEDIA_ROOT= BASE_DIR / "uploads"
 option_settings:
   aws:elasticbeanstalk:container:python:
     WSGIPath:  mypj.wsgi:application
+
+## config DEBUG with environment variable
+
+DEBUG = os.getenv('DEBUG') == 'True'
