@@ -35,3 +35,11 @@ STATICFILES_DIRS=[
 
 MEDIA_URL="media/"  
 MEDIA_ROOT= BASE_DIR / "uploads"  
+
+## setup ebextension
+
+### django.config file
+
+option_settings:
+  aws:elasticbeanstalk:container:python:
+    WSGIPath:  mypj.wsgi:application
