@@ -142,3 +142,23 @@ MEDIA_ROOT= BASE_DIR / "uploads"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+AWS_ACCESS_KEY_ID=os.getenv('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY=os.getenv('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME=os.getenv('AWS_STORAGE_BUCKET_NAME')
+
+STORAGES={
+    "default":{
+        "BACKEND":"storages.backends.s3.S3Storage",
+        "OPTIONS":{
+            'location':'media'
+        }
+    },
+    "staticfiles":{
+        "BACKEND":"storages.backends.s3.S3Storage",
+        "OPTIONS":{
+            'location':'files'
+        }
+    }
+}
