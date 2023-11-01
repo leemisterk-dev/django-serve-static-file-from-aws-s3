@@ -13,7 +13,7 @@ How to config setting to serve user upload files & static files with aws s3 buck
 
 > [!Note] 
 > - create  django.config file and add the following code
-> - change **mypj** to name of your project
+> - change **`mypj`** to name of your project
 
 ```
 option_settings:
