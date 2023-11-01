@@ -9,7 +9,7 @@ How to config setting to serve user upload files & static files with aws s3 buck
 * pillow 
 
 
-## setup ebextension for Elastic Beanstalk
+## setup .ebextension for Elastic Beanstalk
 
 > [!Note] 
 > create  django.config file and add the following code
