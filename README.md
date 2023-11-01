@@ -30,14 +30,14 @@ EX:  ` <img src={{car.image.url}} > `
 * How to run development server without applying static(css file) 
 `python manage.py runserver --nostatic`
 
-* config DEBUG with environment variable
-  - config DEBUG in settings.py
+* Config DEBUG with environment variable in settings.py
     
 `DEBUG = os.getenv('DEBUG') == 'True'`
 
-* serve static file on the same web server
-
-** url.py in root project
+## Serve static files and user upload files on the same web server
+ * add the following code in url.py in root project
+ * -  static(): Helper function to return a URL pattern for serving files in debug mode
+   -  
 
 ```
 from django.conf import settings  
