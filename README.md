@@ -28,17 +28,18 @@ File object has url & path property
 EX:  src={{car.image.url}}
 
 ## How to run development server without applying static(css file) 
-python manage.py runserver --nostatic
+`python manage.py runserver --nostatic`
 
 ## config DEBUG with environment variable
 
 ### config DEBUG in settings.py
-DEBUG = os.getenv('DEBUG') == 'True'
+`DEBUG = os.getenv('DEBUG') == 'True'`
 
 ## serve static file on the same web server
 
 ### url.py in root project
 
+```
 from django.conf import settings  
 from django.conf.urls.static import static  
 
@@ -47,6 +48,7 @@ urlpatterns = [
     path('car/', include('car.urls')),  
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) \  
 + static(settings.STATIC_URL, document_root= settings.STATIC_ROOT)  
+```
 
 # settings.py
 
