@@ -51,6 +51,16 @@ urlpatterns = [
 + static(settings.STATIC_URL, document_root= settings.STATIC_ROOT)  
 ```
 
+
+## Model
+* **upload_to**: This attribute provides a way of setting the upload directory and file name
+
+  ```
+class Car(models.Model):
+    name=models.CharField(max_length=50)
+    image=models.ImageField(upload_to='images')
+    thumbNail=models.FileField(upload_to='thumb_nail')
+  ```
 # settings.py
 
 
