@@ -135,7 +135,7 @@ AWS_STORAGE_BUCKET_NAME=os.getenv('AWS_STORAGE_BUCKET_NAME')
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::mk-bucket-test2/*"
+            "Resource": "arn:aws:s3:::{your-bucket-name}/*"
         }
     ]
 }
