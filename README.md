@@ -89,9 +89,9 @@ MEDIA_ROOT= BASE_DIR / "uploads"
 `
 
 > [!NOTE]
-> setting for django-storage to use s3 bucket
-> "default" key : for user upload file
-> "staticfiles" key: for static files
+> setting for django-storage to use s3 bucket 
+> "default" key : for user upload file 
+> "staticfiles" key: for static files 
 
 ```
 STORAGES={
