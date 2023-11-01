@@ -117,7 +117,46 @@ AWS_STORAGE_BUCKET_NAME=os.getenv('AWS_STORAGE_BUCKET_NAME')
 
 ```
 
+# Config AWS S3 Bucket 
+* edit **bucket policy**
+* enable **Static website hosting**
+* edit **cross origin resource sharing**
+* disable **Block public access**
+* 
 
+## AWS S3 bucket policy
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::mk-bucket-test2/*"
+        }
+    ]
+}
+```
+
+## AWS S3 bucket cross origin resource sharing
+
+```
+[
+    {
+        "AllowedHeaders": [],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
+```
 
 
 
