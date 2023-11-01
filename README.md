@@ -31,8 +31,8 @@ EX:  ` <img src={{car.image.url}} > `
 `python manage.py runserver --nostatic`
 
 * config DEBUG with environment variable
-
-** config DEBUG in settings.py
+  - config DEBUG in settings.py
+    
 `DEBUG = os.getenv('DEBUG') == 'True'`
 
 * serve static file on the same web server
