@@ -25,7 +25,7 @@ option_settings:
 
 * Access File Url in django template file
 File object has url & path property  
-EX:  src={{car.image.url}}
+EX:  ` <img src={{car.image.url}} > `
 
 * How to run development server without applying static(css file) 
 `python manage.py runserver --nostatic`
