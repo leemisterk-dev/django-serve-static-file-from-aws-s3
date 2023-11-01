@@ -23,21 +23,21 @@ option_settings:
 
 # Key Points
 
-## Access File Url in django template file
+* Access File Url in django template file
 File object has url & path property  
 EX:  src={{car.image.url}}
 
-## How to run development server without applying static(css file) 
+* How to run development server without applying static(css file) 
 `python manage.py runserver --nostatic`
 
-## config DEBUG with environment variable
+* config DEBUG with environment variable
 
-### config DEBUG in settings.py
+** config DEBUG in settings.py
 `DEBUG = os.getenv('DEBUG') == 'True'`
 
-## serve static file on the same web server
+* serve static file on the same web server
 
-### url.py in root project
+** url.py in root project
 
 ```
 from django.conf import settings  
