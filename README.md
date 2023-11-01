@@ -71,7 +71,7 @@ STATICFILES_DIRS=[
 ```
 
 > [!Note]
-> STATIC_ROOT: The absolute path to the directory where ./manage.py collectstatic will collect static files for deployment.
+> STATIC_ROOT: The absolute path to the directory where `./manage.py collectstatic` will collect static files for deployment.
 
 `
 STATIC_ROOT= BASE_DIR / 'staticfiles'  
